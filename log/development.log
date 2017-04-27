@@ -2185,3 +2185,670 @@ Completed 200 OK in 44ms (Views: 40.9ms | ActiveRecord: 0.8ms)
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", :environment]]
 DEPRECATION WARNING: Passing #original_exception is deprecated and has no effect. Exceptions will automatically capture the original exception. (called from load at /usr/local/rvm/gems/ruby-2.3.0/bin/rake:23)
+Started GET "/" for 14.32.26.119 at 2017-04-10 12:49:06 +0000
+Cannot render console from 14.32.26.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.0.2) lib/active_record/migration.rb:573:in `check_pending!'
+activerecord (5.0.2) lib/active_record/migration.rb:549:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.9ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (41.8ms)
+DEPRECATION WARNING: Passing #original_exception is deprecated and has no effect. Exceptions will automatically capture the original exception. (called from load at /usr/local/rvm/gems/ruby-2.3.0/bin/rake:23)
+  [1m[35m (12.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (14.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreatePosts (20170403151720)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "posts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170403151720"]]
+  [1m[35m (13.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateComments (20170403151842)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "content" text, "post_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_comments_on_post_id" ON "comments" ("post_id")[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170403151842"]]
+  [1m[35m (13.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", 2017-04-10 12:49:36 UTC], ["updated_at", 2017-04-10 12:49:36 UTC]]
+  [1m[35m (11.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_comments_on_post_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_comments_on_post_id' AND type='index'
+[0m
+Started GET "/" for 14.32.26.119 at 2017-04-10 12:50:23 +0000
+Cannot render console from 14.32.26.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostController#index as HTML
+  Rendering post/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  Rendered post/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 489ms (Views: 465.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/new" for 14.32.26.119 at 2017-04-10 12:50:27 +0000
+Cannot render console from 14.32.26.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostController#new as HTML
+  Rendering post/new.html.erb within layouts/application
+  Rendered post/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 64ms (Views: 60.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/create" for 14.32.26.119 at 2017-04-10 12:50:32 +0000
+Cannot render console from 14.32.26.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZE/TxTh6Ckg7satmPokNBqsG80PzN6blzpb6svuHb/LeMBHryWXs4oLLYrSnnwXpXdHxXDDjJXqvsYMJUyiUxQ==", "title"=>"글1", "content"=>"내용1"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.8ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "글1"], ["content", "내용1"], ["created_at", 2017-04-10 12:50:32 UTC], ["updated_at", 2017-04-10 12:50:32 UTC]]
+  [1m[35m (16.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://testpostcomment-kor-chipmunk.c9users.io/show/1
+Completed 302 Found in 34ms (ActiveRecord: 19.3ms)
+
+
+Started GET "/show/1" for 14.32.26.119 at 2017-04-10 12:50:33 +0000
+Cannot render console from 14.32.26.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering post/show.html.erb within layouts/application
+  [1m[36mComment Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "comments" WHERE "comments"."post_id" = ? LIMIT ?[0m  [["post_id", 1], ["LIMIT", 1]]
+  Rendered post/show.html.erb within layouts/application (40.1ms)
+Completed 200 OK in 109ms (Views: 101.6ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/comment/create" for 14.32.26.119 at 2017-04-10 12:50:40 +0000
+Cannot render console from 14.32.26.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CommentController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"c52QSUCzkmWdZNaCWZ7sMPrK9xIDpP363C/WC1aH8pvtX/vYD2TrowknKEJrHG9RFPXEHmUove9RZ0V6RDfS+g==", "post_id"=>"1", "content"=>"댓글1"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "comments" ("content", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "댓글1"], ["post_id", 1], ["created_at", 2017-04-10 12:50:40 UTC], ["updated_at", 2017-04-10 12:50:40 UTC]]
+  [1m[35m (24.1ms)[0m  [1m[36mcommit transaction[0m
+DEPRECATION WARNING: `redirect_to :back` is deprecated and will be removed from Rails 5.1. Please use `redirect_back(fallback_location: fallback_location)` where `fallback_location` represents the location to use if the request has no HTTP referer information. (called from create at /home/ubuntu/workspace/app/controllers/comment_controller.rb:8)
+Redirected to https://testpostcomment-kor-chipmunk.c9users.io/show/1
+Completed 302 Found in 68ms (ActiveRecord: 26.1ms)
+
+
+Started GET "/show/1" for 14.32.26.119 at 2017-04-10 12:50:40 +0000
+Cannot render console from 14.32.26.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering post/show.html.erb within layouts/application
+  [1m[36mComment Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "comments" WHERE "comments"."post_id" = ? LIMIT ?[0m  [["post_id", 1], ["LIMIT", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 1]]
+  Rendered post/show.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 67ms (Views: 63.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/comment/update/1" for 14.32.26.119 at 2017-04-10 12:50:44 +0000
+Cannot render console from 14.32.26.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CommentController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WFwjZO1k1z6ReqDOvyEWh/TXOyfll421pv4iW+uoNDzGnkj1orOu+AU5Xg6No5XmGugIK4MbzaArtrEq+RgUXQ==", "post_id"=>"1", "content"=>"댓글2", "comment_id"=>"1"}
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (1.1ms)[0m  [1m[33mUPDATE "comments" SET "content" = ?, "updated_at" = ? WHERE "comments"."id" = ?[0m  [["content", "댓글2"], ["updated_at", 2017-04-10 12:50:44 UTC], ["id", 1]]
+  [1m[35m (11.8ms)[0m  [1m[36mcommit transaction[0m
+DEPRECATION WARNING: `redirect_to :back` is deprecated and will be removed from Rails 5.1. Please use `redirect_back(fallback_location: fallback_location)` where `fallback_location` represents the location to use if the request has no HTTP referer information. (called from update at /home/ubuntu/workspace/app/controllers/comment_controller.rb:23)
+Redirected to https://testpostcomment-kor-chipmunk.c9users.io/show/1
+Completed 302 Found in 22ms (ActiveRecord: 13.3ms)
+
+
+Started GET "/show/1" for 14.32.26.119 at 2017-04-10 12:50:45 +0000
+Cannot render console from 14.32.26.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering post/show.html.erb within layouts/application
+  [1m[36mComment Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "comments" WHERE "comments"."post_id" = ? LIMIT ?[0m  [["post_id", 1], ["LIMIT", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 1]]
+  Rendered post/show.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 37ms (Views: 34.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 14.32.26.119 at 2017-04-10 12:50:49 +0000
+Cannot render console from 14.32.26.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostController#index as HTML
+  Rendering post/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered post/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 36ms (Views: 33.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/edit/1" for 14.32.26.119 at 2017-04-10 12:50:51 +0000
+Cannot render console from 14.32.26.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering post/edit.html.erb within layouts/application
+  Rendered post/edit.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 36ms (Views: 31.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/update" for 14.32.26.119 at 2017-04-10 12:50:53 +0000
+Cannot render console from 14.32.26.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uUqSIA9DLtXG59iVAeLq4pResCetvYDdi2ABk1CxYHwVOF/Zmb5JPJES3oeJ2gmEvUtCmhr64yoM3A8+LuA4CA==", "id"=>"1", "title"=>"글1", "content"=>"내용2"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[33mUPDATE "posts" SET "content" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["content", "내용2"], ["updated_at", 2017-04-10 12:50:53 UTC], ["id", 1]]
+  [1m[35m (15.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://testpostcomment-kor-chipmunk.c9users.io/show/1
+Completed 302 Found in 23ms (ActiveRecord: 16.8ms)
+
+
+Started GET "/show/1" for 14.32.26.119 at 2017-04-10 12:50:54 +0000
+Cannot render console from 14.32.26.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering post/show.html.erb within layouts/application
+  [1m[36mComment Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "comments" WHERE "comments"."post_id" = ? LIMIT ?[0m  [["post_id", 1], ["LIMIT", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 1]]
+  Rendered post/show.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 38ms (Views: 35.3ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/comment/destroy/1" for 14.32.26.119 at 2017-04-10 12:50:57 +0000
+Cannot render console from 14.32.26.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CommentController#destroy as HTML
+  Parameters: {"authenticity_token"=>"3xQwaBmdhaGE+/78mOf4QsjOzx/hqxq22xGeGnF/HOlB1lv5Vkr8ZxC4ADyqZXsjJvH8E4cnWqNWWQ1rY888iA==", "comment_id"=>"1"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = ?[0m  [["id", 1]]
+  [1m[35m (30.9ms)[0m  [1m[36mcommit transaction[0m
+DEPRECATION WARNING: `redirect_to :back` is deprecated and will be removed from Rails 5.1. Please use `redirect_back(fallback_location: fallback_location)` where `fallback_location` represents the location to use if the request has no HTTP referer information. (called from destroy at /home/ubuntu/workspace/app/controllers/comment_controller.rb:15)
+Redirected to https://testpostcomment-kor-chipmunk.c9users.io/show/1
+Completed 302 Found in 37ms (ActiveRecord: 32.1ms)
+
+
+Started GET "/show/1" for 14.32.26.119 at 2017-04-10 12:50:57 +0000
+Cannot render console from 14.32.26.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering post/show.html.erb within layouts/application
+  [1m[36mComment Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "comments" WHERE "comments"."post_id" = ? LIMIT ?[0m  [["post_id", 1], ["LIMIT", 1]]
+  Rendered post/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 38ms (Views: 35.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 14.32.26.119 at 2017-04-10 12:51:02 +0000
+Cannot render console from 14.32.26.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostController#index as HTML
+  Rendering post/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered post/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 28ms (Views: 26.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/destroy/1" for 14.32.26.119 at 2017-04-10 12:51:04 +0000
+Cannot render console from 14.32.26.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 1]]
+  [1m[35m (13.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://testpostcomment-kor-chipmunk.c9users.io/
+Completed 302 Found in 20ms (ActiveRecord: 14.9ms)
+
+
+Started GET "/" for 14.32.26.119 at 2017-04-10 12:51:04 +0000
+Cannot render console from 14.32.26.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostController#index as HTML
+  Rendering post/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  Rendered post/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 29ms (Views: 27.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/new" for 14.32.26.119 at 2017-04-10 12:51:05 +0000
+Cannot render console from 14.32.26.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostController#new as HTML
+  Rendering post/new.html.erb within layouts/application
+  Rendered post/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 27ms (Views: 25.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 14.32.26.119 at 2017-04-10 12:53:03 +0000
+Cannot render console from 14.32.26.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostController#index as HTML
+  Rendering post/index.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  Rendered post/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 54ms (Views: 50.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 14.32.26.119 at 2017-04-10 12:53:05 +0000
+Cannot render console from 14.32.26.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostController#index as HTML
+  Rendering post/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  Rendered post/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 35ms (Views: 33.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/new" for 14.32.26.119 at 2017-04-10 12:53:05 +0000
+Cannot render console from 14.32.26.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostController#new as HTML
+  Rendering post/new.html.erb within layouts/application
+  Rendered post/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 62ms (Views: 36.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/create" for 14.32.26.119 at 2017-04-10 12:53:10 +0000
+Cannot render console from 14.32.26.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"i7YYK1C++z0a0A4yFR9zaENd4qXn7vSj4//fPyHG424xydoFoaEdl6Oqx+CMCXuHtYrguiQ6dzyC2KaEiWkYWQ==", "title"=>"제목1", "content"=>"내용1"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "제목1"], ["content", "내용1"], ["created_at", 2017-04-10 12:53:10 UTC], ["updated_at", 2017-04-10 12:53:10 UTC]]
+  [1m[35m (13.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://testpostcomment-kor-chipmunk.c9users.io/show/2
+Completed 302 Found in 21ms (ActiveRecord: 15.0ms)
+
+
+Started GET "/show/2" for 14.32.26.119 at 2017-04-10 12:53:10 +0000
+Cannot render console from 14.32.26.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering post/show.html.erb within layouts/application
+  [1m[36mComment Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "comments" WHERE "comments"."post_id" = ? LIMIT ?[0m  [["post_id", 2], ["LIMIT", 1]]
+  Rendered post/show.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 50ms (Views: 47.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 14.32.26.119 at 2017-04-10 12:53:13 +0000
+Cannot render console from 14.32.26.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostController#index as HTML
+  Rendering post/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered post/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 223ms (Views: 220.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/show/2" for 14.32.26.119 at 2017-04-10 12:53:18 +0000
+Cannot render console from 14.32.26.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering post/show.html.erb within layouts/application
+  [1m[36mComment Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "comments" WHERE "comments"."post_id" = ? LIMIT ?[0m  [["post_id", 2], ["LIMIT", 1]]
+  Rendered post/show.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 54ms (Views: 50.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 14.32.26.119 at 2017-04-10 12:53:28 +0000
+Cannot render console from 14.32.26.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostController#index as HTML
+  Rendering post/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered post/index.html.erb within layouts/application (165.9ms)
+Completed 200 OK in 208ms (Views: 205.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/edit/2" for 14.32.26.119 at 2017-04-10 12:53:30 +0000
+Cannot render console from 14.32.26.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering post/edit.html.erb within layouts/application
+  Rendered post/edit.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 30ms (Views: 27.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/update" for 14.32.26.119 at 2017-04-10 12:53:45 +0000
+Cannot render console from 14.32.26.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"H7CaKKotgSoz9s5iU8wwln9s5nKMZqxP5515OD77gCizwlfRPNDmw2QDyHDb9NPwVnkUzzshz7hgIXeVQKrYXA==", "id"=>"2", "title"=>"ㄱ갓선재 ㄸㄷ", "content"=>"크으"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[33mUPDATE "posts" SET "title" = ?, "content" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["title", "ㄱ갓선재 ㄸㄷ"], ["content", "크으"], ["updated_at", 2017-04-10 12:53:45 UTC], ["id", 2]]
+  [1m[35m (14.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://testpostcomment-kor-chipmunk.c9users.io/show/2
+Completed 302 Found in 24ms (ActiveRecord: 15.7ms)
+
+
+Started GET "/show/2" for 14.32.26.119 at 2017-04-10 12:53:46 +0000
+Cannot render console from 14.32.26.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering post/show.html.erb within layouts/application
+  [1m[36mComment Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "comments" WHERE "comments"."post_id" = ? LIMIT ?[0m  [["post_id", 2], ["LIMIT", 1]]
+  Rendered post/show.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 40ms (Views: 37.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/comment/create" for 14.32.26.119 at 2017-04-10 12:53:52 +0000
+Cannot render console from 14.32.26.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CommentController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"F41QgDKmvkZpQn8WBa4AmOKji460+o6ydvnVBbaUTeuJTzsRfXHHgP0BgdY3LIP5DJy4gtJ2zqf7sUZ0pCRtig==", "post_id"=>"2", "content"=>"ㅇㄱㄹㅇ"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO "comments" ("content", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "ㅇㄱㄹㅇ"], ["post_id", 2], ["created_at", 2017-04-10 12:53:52 UTC], ["updated_at", 2017-04-10 12:53:52 UTC]]
+  [1m[35m (17.6ms)[0m  [1m[36mcommit transaction[0m
+DEPRECATION WARNING: `redirect_to :back` is deprecated and will be removed from Rails 5.1. Please use `redirect_back(fallback_location: fallback_location)` where `fallback_location` represents the location to use if the request has no HTTP referer information. (called from create at /home/ubuntu/workspace/app/controllers/comment_controller.rb:8)
+Redirected to https://testpostcomment-kor-chipmunk.c9users.io/show/2
+Completed 302 Found in 28ms (ActiveRecord: 19.5ms)
+
+
+Started GET "/show/2" for 14.32.26.119 at 2017-04-10 12:53:53 +0000
+Cannot render console from 14.32.26.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering post/show.html.erb within layouts/application
+  [1m[36mComment Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "comments" WHERE "comments"."post_id" = ? LIMIT ?[0m  [["post_id", 2], ["LIMIT", 1]]
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 2]]
+  Rendered post/show.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 51ms (Views: 47.5ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/comment/update/2" for 14.32.26.119 at 2017-04-10 12:54:02 +0000
+Cannot render console from 14.32.26.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CommentController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CGO5WBwHN9lHgHhlSfJ3nKknPQszVgSS1ZSCQ62vzzqWodLJU9BOH9PDhqV7cPT9RxgOB1XaRIdY3BEyvx/vWw==", "post_id"=>"2", "content"=>"ㅇㄱㄹㅇ - 2", "comment_id"=>"2"}
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "comments" SET "content" = ?, "updated_at" = ? WHERE "comments"."id" = ?[0m  [["content", "ㅇㄱㄹㅇ - 2"], ["updated_at", 2017-04-10 12:54:02 UTC], ["id", 2]]
+  [1m[35m (37.9ms)[0m  [1m[36mcommit transaction[0m
+DEPRECATION WARNING: `redirect_to :back` is deprecated and will be removed from Rails 5.1. Please use `redirect_back(fallback_location: fallback_location)` where `fallback_location` represents the location to use if the request has no HTTP referer information. (called from update at /home/ubuntu/workspace/app/controllers/comment_controller.rb:23)
+Redirected to https://testpostcomment-kor-chipmunk.c9users.io/show/2
+Completed 302 Found in 130ms (ActiveRecord: 39.2ms)
+
+
+Started GET "/show/2" for 14.32.26.119 at 2017-04-10 12:54:02 +0000
+Cannot render console from 14.32.26.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering post/show.html.erb within layouts/application
+  [1m[36mComment Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "comments" WHERE "comments"."post_id" = ? LIMIT ?[0m  [["post_id", 2], ["LIMIT", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 2]]
+  Rendered post/show.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 178ms (Views: 173.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/show/2" for 14.32.26.119 at 2017-04-10 12:54:10 +0000
+Cannot render console from 14.32.26.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering post/show.html.erb within layouts/application
+  [1m[36mComment Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "comments" WHERE "comments"."post_id" = ? LIMIT ?[0m  [["post_id", 2], ["LIMIT", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 2]]
+  Rendered post/show.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 138ms (Views: 135.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 14.32.26.119 at 2017-04-10 12:54:20 +0000
+Cannot render console from 14.32.26.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostController#index as HTML
+  Rendering post/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered post/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 54ms (Views: 51.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 14.32.26.119 at 2017-04-10 12:54:23 +0000
+Cannot render console from 14.32.26.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostController#index as HTML
+  Rendering post/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered post/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 43ms (Views: 40.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 14.32.26.119 at 2017-04-10 12:54:25 +0000
+Cannot render console from 14.32.26.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostController#index as HTML
+  Rendering post/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  [1m[36mPost Load (48.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered post/index.html.erb within layouts/application (52.6ms)
+Completed 200 OK in 84ms (Views: 32.9ms | ActiveRecord: 49.0ms)
+
+
+Started GET "/show/2" for 14.32.26.119 at 2017-04-10 12:57:54 +0000
+Cannot render console from 14.32.26.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering post/show.html.erb within layouts/application
+  [1m[36mComment Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "comments" WHERE "comments"."post_id" = ? LIMIT ?[0m  [["post_id", 2], ["LIMIT", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 2]]
+  Rendered post/show.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 41ms (Views: 37.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 14.32.26.119 at 2017-04-10 12:57:55 +0000
+Cannot render console from 14.32.26.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostController#index as HTML
+  Rendering post/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered post/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 32ms (Views: 29.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/new" for 14.32.26.119 at 2017-04-10 12:57:59 +0000
+Cannot render console from 14.32.26.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostController#new as HTML
+  Rendering post/new.html.erb within layouts/application
+  Rendered post/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 29ms (Views: 27.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/create" for 14.32.26.119 at 2017-04-10 12:58:14 +0000
+Cannot render console from 14.32.26.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SxB20sKUj9/nQhPjpqGddEErtptVsmaL/5CLyuHeIrXxb7T8M4tpdV442jE/t5Wbt/y0hJZm5RSet/JxSXHZgg==", "title"=>"1", "content"=>"2"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "1"], ["content", "2"], ["created_at", 2017-04-10 12:58:14 UTC], ["updated_at", 2017-04-10 12:58:14 UTC]]
+  [1m[35m (14.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://testpostcomment-kor-chipmunk.c9users.io/show/3
+Completed 302 Found in 22ms (ActiveRecord: 15.4ms)
+
+
+Started GET "/show/3" for 14.32.26.119 at 2017-04-10 12:58:15 +0000
+Cannot render console from 14.32.26.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering post/show.html.erb within layouts/application
+  [1m[36mComment Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "comments" WHERE "comments"."post_id" = ? LIMIT ?[0m  [["post_id", 3], ["LIMIT", 1]]
+  Rendered post/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 31ms (Views: 28.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 14.32.26.119 at 2017-04-10 12:58:52 +0000
+Cannot render console from 14.32.26.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostController#index as HTML
+  Rendering post/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered post/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 35ms (Views: 33.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/destroy/2" for 14.32.26.119 at 2017-04-10 12:58:55 +0000
+Cannot render console from 14.32.26.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostController#destroy as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 2]]
+  [1m[35m (14.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://testpostcomment-kor-chipmunk.c9users.io/
+Completed 302 Found in 20ms (ActiveRecord: 16.0ms)
+
+
+Started GET "/" for 14.32.26.119 at 2017-04-10 12:58:56 +0000
+Cannot render console from 14.32.26.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostController#index as HTML
+  Rendering post/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered post/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 32ms (Views: 30.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 14.32.26.119 at 2017-04-10 13:06:22 +0000
+Cannot render console from 14.32.26.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostController#index as HTML
+  Rendering post/index.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered post/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 48ms (Views: 45.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 219.255.207.130 at 2017-04-27 10:31:02 +0000
+Cannot render console from 219.255.207.130! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostController#index as HTML
+  Rendering post/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered post/index.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 512ms (Views: 482.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/show/3" for 219.255.207.130 at 2017-04-27 10:31:14 +0000
+Cannot render console from 219.255.207.130! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering post/show.html.erb within layouts/application
+  [1m[36mComment Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "comments" WHERE "comments"."post_id" = ? LIMIT ?[0m  [["post_id", 3], ["LIMIT", 1]]
+  Rendered post/show.html.erb within layouts/application (69.9ms)
+Completed 200 OK in 116ms (Views: 107.1ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/comment/create" for 219.255.207.130 at 2017-04-27 10:44:44 +0000
+Cannot render console from 219.255.207.130! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CommentController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ae7WZTLMMCORKjFIklaLwA6CURjMvK8rsit+pj30N86bXDgBitORmA3jCO0kPBMc7vn+8/aT0bAdYAQnOML3FA==", "post_id"=>"3", "content"=>"123456"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Load (1.6ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (3.0ms)[0m  [1m[32mINSERT INTO "comments" ("content", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "123456"], ["post_id", 3], ["created_at", 2017-04-27 10:44:44 UTC], ["updated_at", 2017-04-27 10:44:44 UTC]]
+  [1m[35m (11.3ms)[0m  [1m[36mcommit transaction[0m
+DEPRECATION WARNING: `redirect_to :back` is deprecated and will be removed from Rails 5.1. Please use `redirect_back(fallback_location: fallback_location)` where `fallback_location` represents the location to use if the request has no HTTP referer information. (called from create at /home/ubuntu/workspace/app/controllers/comment_controller.rb:8)
+Redirected to https://testpostcomment-kor-chipmunk.c9users.io/show/3
+Completed 302 Found in 56ms (ActiveRecord: 17.1ms)
+
+
+Started GET "/show/3" for 219.255.207.130 at 2017-04-27 10:44:45 +0000
+Cannot render console from 219.255.207.130! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering post/show.html.erb within layouts/application
+  [1m[36mComment Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "comments" WHERE "comments"."post_id" = ? LIMIT ?[0m  [["post_id", 3], ["LIMIT", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 3]]
+  Rendered post/show.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 111ms (Views: 106.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 219.255.207.130 at 2017-04-27 10:44:51 +0000
+Cannot render console from 219.255.207.130! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostController#index as HTML
+  Rendering post/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered post/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 37ms (Views: 33.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 219.255.207.130 at 2017-04-27 10:58:13 +0000
+Cannot render console from 219.255.207.130! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostController#index as HTML
+  Rendering post/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered post/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 101ms (Views: 93.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 219.255.207.130 at 2017-04-27 11:10:32 +0000
+Cannot render console from 219.255.207.130! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostController#index as HTML
+  Rendering post/index.html.erb within layouts/application
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered post/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 137ms (Views: 132.0ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/" for 219.255.207.130 at 2017-04-27 11:51:06 +0000
+Cannot render console from 219.255.207.130! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostController#index as HTML
+  Rendering post/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered post/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 73ms (Views: 65.0ms | ActiveRecord: 1.7ms)
+
+
