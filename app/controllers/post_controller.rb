@@ -9,6 +9,9 @@ class PostController < ApplicationController
     newPost.title = params[:title]
     newPost.content = params[:content]
     newPost.user = current_user
+    if params[:avatar]
+      newPost.avatar = params[:avatar]
+    end
     newPost.save
     
     # newPost = Post.create(title: params[:title], content: params[:content])
@@ -40,6 +43,9 @@ class PostController < ApplicationController
     updatePost = Post.find(params[:id])
     updatePost.title = params[:title]
     updatePost.content = params[:content]
+    if params[:avatar]
+      updatePost.avatar = params[:avatar]
+    end
     updatePost.save
     
     # updatePost.update(title: params[:title], content: params[:content])

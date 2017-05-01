@@ -17,6 +17,9 @@
                     <td><%= onePost.id %></td>
                     <td>
                         <%= link_to onePost.title, "show/#{onePost.id}" %>
+                        <% if onePost.avatar.exists? %>
+                            <input type="text" class="list-i-img" readonly="readonly" title="사진">
+                        <% end %>
                     </td>
                     <td>
                         <%= onePost.user.nickname %>

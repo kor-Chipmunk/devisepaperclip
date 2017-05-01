@@ -8,6 +8,13 @@
 <div class="form-group row">
     <textarea class="form-control col-md-12" id="frmContent" name="content" placeholder="내용을 입력해 주세요." rows="15" readonly><%= @showPost.content %></textarea>
 </div>
+
+<% if @showPost.avatar.exists? %>
+    <div class="row" style="margin: 30px;">
+        <img src="<%= @showPost.avatar.url %>" class="col-md-12 text-center">
+    </div>
+<% end %>
+
 <div class="form-group row">
     <div class="col-md-2">
         <a href="/" class="btn btn-default">목록으로 돌아가기</a>
