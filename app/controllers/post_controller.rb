@@ -1,4 +1,6 @@
 class PostController < ApplicationController
+  before_action :authenticate_user!, except: [:index]
+  
   def new
   end
 
@@ -6,6 +8,7 @@ class PostController < ApplicationController
     newPost = Post.new
     newPost.title = params[:title]
     newPost.content = params[:content]
+    newPost.user = current_user
     newPost.save
     
     # newPost = Post.create(title: params[:title], content: params[:content])

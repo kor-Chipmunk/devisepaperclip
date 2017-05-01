@@ -8,6 +8,7 @@
         <thead>
             <th width="100px">글 번호</th>
             <th>글 제목</th>
+            <th width="120px">작성자</th>
             <th width="60px"></th>
         </thead>
         <tbody>
@@ -16,6 +17,9 @@
                     <td><%= onePost.id %></td>
                     <td>
                         <%= link_to onePost.title, "show/#{onePost.id}" %>
+                    </td>
+                    <td>
+                        <%= onePost.user.nickname %>
                     </td>
                     <td>
                         <%= link_to '', "/edit/#{onePost.id}", class: "glyphicon glyphicon-pencil" %>&nbsp;

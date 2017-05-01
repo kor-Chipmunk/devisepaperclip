@@ -22,9 +22,14 @@
 <% else %>
     <% @showPost.comments.each do |comment| %>
         <div class="row">
-            <div class="col-md-11">
+            <div class="col-md-9">
                 <p>
                     <strong id="comment<%= comment.id %>"><%= comment.content %></strong>
+                </p>
+            </div>
+            <div class="col-md-2">
+                <p>
+                    <%= comment.user.nickname %>
                 </p>
             </div>
             <div class="col-md-1">
